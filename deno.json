@@ -1,0 +1,10 @@
+{
+  "tasks": {
+    "dev": "deno run --watch main.ts"
+  },
+  "imports": {
+    "@oak/acorn": "jsr:@oak/acorn@^1.1.1",
+    "happy-dom": "npm:happy-dom@^15.11.0",
+    "ky": "npm:ky@^1.7.2"
+  }
+}

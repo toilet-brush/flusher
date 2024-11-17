@@ -3,7 +3,7 @@ import { Element, Window } from "happy-dom-without-node";
 export function parseHtml(content: string) {
   const window = new Window();
   window.document.body.innerHTML = content;
-  return null;
+  return window;
 }
 
 export function getTextContent(element: Element | null) {

@@ -1,9 +1,9 @@
-import { Element, Window } from "happy-dom";
+import { JSDOM } from "jsdom";
+import { Element } from "jsdom";
 
 export function parseHtml(content: string) {
-  const window = new Window();
-  window.document.body.innerHTML = content;
-  return window;
+  const dom = new JSDOM(content);
+  return dom.window;
 }
 
 export function getTextContent(element: Element | null) {

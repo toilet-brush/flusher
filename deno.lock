@@ -13,7 +13,7 @@
     "jsr:@std/media-types@1": "1.0.3",
     "jsr:@valibot/valibot@0.42": "0.42.1",
     "npm:buffer@6": "6.0.3",
-    "npm:happy-dom@^15.11.0": "15.11.0",
+    "npm:happy-dom-without-node@^14.12.3": "14.12.3",
     "npm:hyperid@^3.3.0": "3.3.0",
     "npm:ky@^1.7.2": "1.7.2",
     "npm:path-to-regexp@^8.2.0": "8.2.0",
@@ -146,12 +146,13 @@
         "get-intrinsic"
       ]
     },
-    "happy-dom@15.11.0": {
-      "integrity": "sha512-/zyxHbXriYJ8b9Urh43ILk/jd9tC07djURnJuAimJ3tJCOLOzOUp7dEHDwJOZyzROlrrooUhr/0INZIDBj1Bjw==",
+    "happy-dom-without-node@14.12.3": {
+      "integrity": "sha512-1wp8+GFneT8mBjVnzancXHRuscEUH3vnb38lfCHPxuSu6OiRw1kQzHFbTGYlNCU2YXOlVIlzsS6xg9nAr7Xg6Q==",
       "dependencies": [
         "entities",
         "webidl-conversions",
-        "whatwg-mimetype"
+        "whatwg-mimetype",
+        "whatwg-url"
       ]
     },
     "has-property-descriptors@1.0.2": {
@@ -192,6 +193,9 @@
     "path-to-regexp@8.2.0": {
       "integrity": "sha512-TdrF7fW9Rphjq4RjrW0Kp2AW0Ahwu9sRGTkS6bvDi0SCwZlEZYmcfDbEsTz8RVk0EHIS/Vd1bv3JhG+1xZuAyQ=="
     },
+    "punycode@2.3.1": {
+      "integrity": "sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg=="
+    },
     "qs@6.13.0": {
       "integrity": "sha512-+38qI9SOr8tfZ4QmJNplMUxqjbe7LKvvZgWdExBOmd+egZTtjLB67Gu0HRX3u/XOq7UU2Nx6nsjvS16Z9uwfpg==",
       "dependencies": [
@@ -227,6 +231,12 @@
         "safe-buffer"
       ]
     },
+    "tr46@5.0.0": {
+      "integrity": "sha512-tk2G5R2KRwBd+ZN0zaEXpmzdKyOYksXwywulIX95MBODjSzMIuQnQ3m8JxgbhnL1LeVo7lqQKsYa1O3Htl7K5g==",
+      "dependencies": [
+        "punycode"
+      ]
+    },
     "undici@6.20.1": {
       "integrity": "sha512-AjQF1QsmqfJys+LXfGTNum+qw4S88CojRInG/6t31W/1fk6G59s92bnAvGz5Cmur+kQv2SURXEvvudLmbrE8QA=="
     },
@@ -241,6 +251,13 @@
     },
     "whatwg-mimetype@3.0.0": {
       "integrity": "sha512-nt+N2dzIutVRxARx1nghPKGv1xHikU7HKdfafKkLNLindmPU/ch3U31NOCGGA/dmPcmb1VlofO0vnKAcsm0o/Q=="
+    },
+    "whatwg-url@14.0.0": {
+      "integrity": "sha512-1lfMEm2IEr7RIV+f4lUNPOqfFL+pO+Xw3fJSqmjX9AbXcXcYOkCe1P6+9VBZB6n94af16NfZf+sSk0JCBZC9aw==",
+      "dependencies": [
+        "tr46",
+        "webidl-conversions"
+      ]
     }
   },
   "remote": {
@@ -270,7 +287,7 @@
   "workspace": {
     "dependencies": [
       "jsr:@oak/acorn@^1.1.1",
-      "npm:happy-dom@^15.11.0",
+      "npm:happy-dom-without-node@^14.12.3",
       "npm:ky@^1.7.2"
     ]
   }

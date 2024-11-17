@@ -4,7 +4,7 @@
   },
   "imports": {
     "@oak/acorn": "jsr:@oak/acorn@^1.1.1",
-    "happy-dom": "npm:happy-dom@^15.11.0",
+    "happy-dom-without-node": "npm:happy-dom-without-node@^14.12.3",
     "ky": "npm:ky@^1.7.2"
   }
 }

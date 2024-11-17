@@ -1,17 +1,19 @@
-export type SearchEngineResult = Readonly<{
-    url?: string;
-    title?: string;
-    content?: string;
-    engine: string;
-}>;
+export interface SearchEngineResult {
+    readonly url?: string;
+    readonly title?: string;
+    readonly content?: string;
+    readonly engine: string;
+}
 
-export type SearchParams = Readonly<{
-    query: string;
-    limit?: number;
-    page?: number;
-}>;
+export interface SearchParams {
+    readonly query: string;
+    readonly limit?: number;
+    readonly page?: number;
+}
 
 export interface SearchEngine {
     readonly name: string;
-    readonly search: (params: SearchParams) => Promise<readonly SearchEngineResult[]>;
+    readonly search: (
+        params: SearchParams,
+    ) => Promise<readonly SearchEngineResult[]>;
 }

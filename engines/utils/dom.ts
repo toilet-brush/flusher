@@ -1,7 +1,7 @@
 //import { Element, Window } from "happy-dom";
 
 export function parseHtml(content: string) {
-  //const window = new Window();
+  const window = new Window();
   //window.document.body.innerHTML = content;
   return null;
 }

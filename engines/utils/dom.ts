@@ -1,4 +1,4 @@
-//import { Element, Window } from "happy-dom";
+import { Element, Window } from "happy-dom";
 
 export function parseHtml(content: string) {
   const window = new Window();

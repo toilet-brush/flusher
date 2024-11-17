@@ -1,8 +1,8 @@
-import { Element, Window } from "happy-dom";
+import { Element, Window } from "happy-dom-without-node";
 
 export function parseHtml(content: string) {
   const window = new Window();
-  //window.document.body.innerHTML = content;
+  window.document.body.innerHTML = content;
   return null;
 }
 
